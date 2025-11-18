@@ -5,6 +5,11 @@
   <title>TheSteelDesigner.eu | Steel Structure Design, SAP2000/ETABS & Tekla Detailing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- SEO basics -->
   <meta name="description" content="TheSteelDesigner.eu – European structural engineering practice led by Silviu Ionescu, PhD Civil Eng., specialised in steel structure design to Eurocodes, advanced structural analysis in SAP2000 & ETABS, steel connection design, Tekla Structures detailing and consultancy / second opinions on steel structure projects.">
   <meta name="keywords" content="steel design, steel structure design, Eurocode 3, Eurocode 8, steel connections, Tekla detailing, Tekla Structures, SAP2000, ETABS, structural analysis, steel structures, steel engineer Europe, structural steel engineer, second opinion, steel consultancy">
@@ -47,7 +52,7 @@
 </head>
 <body>
 
-  <!-- Floating buttons -->
+  <!-- Floating buttons (fixed positioning, high z-index) -->
   <!-- TODO: înlocuiește YOURNUMBER cu numărul tău în format internațional, fără +, ex: 40722XXXXXX -->
   <a class="fab whatsapp-float" href="https://wa.me/YOURNUMBER" target="_blank" rel="noopener" aria-label="WhatsApp">
     <svg viewBox="0 0 32 32" aria-hidden="true">
@@ -61,16 +66,16 @@
     </svg>
   </a>
 
-  <div class="page">
     <header>
+      <div class="header-wrapper">
       <div class="logo-wrapper">
         <div class="logo-mark" aria-hidden="true">
-          <img src="/public/logo.png" alt="TheSteelDesigner.eu Logo" onerror="this.style.display='none'">
+          <img src="./public/logo.png" alt="TheSteelDesigner.eu Logo" onerror="this.style.display='none'">
         </div>
-        <div class="logo-text">
+        <a href="#hero-title" class="logo-text">
           <span>TheSteelDesigner.eu</span>
           <span>Steel design • SAP2000/ETABS • Tekla</span>
-        </div>
+        </a>
       </div>
 
       <nav>
@@ -78,25 +83,39 @@
         <a href="#workflow">Process</a>
         <a href="#portfolio">Projects</a>
         <a href="#about">About</a>
-        <a href="#contact" class="btn-ghost">Contact</a>
-        <!-- TODO: LinkedIn real -->
         <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#contact" class="btn-primary">Contact</a>
       </nav>
+      </div>
     </header>
 
+  <div class="page">
+
+
     <main>
-      <!-- HERO -->
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-left">
-          <h1 id="hero-title">
-            <span class="accent">Steel Structure Design</span>, SAP2000/ETABS Analysis &amp; Tekla Detailing
-          </h1>
+      <!-- HERO: The centerpiece of the minimalist design -->
+      <section style="
+            background-image: url('./public/bgimages/193b5d4bf6079469ba784ae7808861de.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          " class="hero" aria-labelledby="hero-title">
+        
+        <div class="hero-wrapper">
+          <div class="hero-left">
+            <h1 id="hero-title">
+              <span class="accent">Structural Engineering:</span> <br> Steel Design, <br> Analysis, <br> &amp; Detailing
+            </h1>
           <p class="hero-lead">
-            TheSteelDesigner.eu is led by <strong>Silviu Ionescu, PhD Civil Eng.</strong>, specialised in 
-            <strong>steel structure design to Eurocodes</strong>, <strong>advanced structural analysis in SAP2000 &amp; ETABS</strong>, 
-            <strong>steel connection design</strong> and <strong>Tekla Structures detailing</strong> – as well as 
-            <strong>consultancy and second opinions on existing steel structure projects and Tekla models</strong>.
+            TheSteelDesigner.eu is led by <strong>Silviu Ionescu, PhD Civil Eng.</strong>, specializing in 
+            <strong class="text-blue-600">steel structure design to Eurocodes</strong>, 
+            <strong class="text-blue-600">advanced structural analysis (SAP2000/ETABS)</strong>, 
+            and <strong class="text-blue-600">Tekla Structures detailing</strong>.
           </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary btn-base">Request a quote</a>
+            <a class="btn-base btn-ghost" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">View LinkedIn Profile</a>
+          </div>
           <div class="hero-tags">
             <span class="hero-tag">Steel structures</span>
             <span class="hero-tag">Eurocode 3 &amp; 8</span>
@@ -104,335 +123,232 @@
             <span class="hero-tag">Tekla Structures</span>
             <span class="hero-tag">Consultancy &amp; 2nd opinion</span>
           </div>
-          <div class="hero-actions">
-            <a href="#contact" class="btn-primary">Request a quote</a>
-            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener" class="btn-ghost">View LinkedIn profile</a>
-          </div>
           <p class="hero-note">
-            We support your internal team with specialised steel design, global analysis and Tekla documentation, 
-            <strong>offer consultancy for calculations and detailing on any steel structure project</strong>, 
-            and provide <strong>independent second opinions</strong> before fabrication.
+            We provide specialized support for your internal team, offering clear calculations, detailing aligned with structural intent, and <strong>independent second opinions</strong> before fabrication.
           </p>
         </div>
 
         <aside class="hero-right">
           <div>
-            <div class="hero-card-title">Key focus</div>
+            <div class="hero-card-title">Core Competence</div>
             <div class="hero-keyline">
-              Steel structures + SAP2000/ETABS + Tekla, with design, detailing and consultancy – not just drafting.
+              Design, Detailing, and Consultancy: Bridging advanced analysis and practical fabrication documentation.
             </div>
           </div>
           <div class="hero-grid">
             <div class="hero-pill">
-              <span>Design codes</span>
-              <strong>EN 1993, EN 1998, EN 1991</strong>
+              <span>Codes</span>
+              <strong>EN 1993, EN 1998</strong>
             </div>
             <div class="hero-pill">
-              <span>Software</span>
-              <strong>SAP2000 · ETABS · Tekla Structures</strong>
+              <span>Tools</span>
+              <strong>SAP2000 · ETABS</strong>
             </div>
             <div class="hero-pill">
-              <span>Typical projects</span>
-              <strong>Steel structures: halls, platforms, stairs</strong>
+              <span>Deliverables</span>
+              <strong>Calculations, Tekla Models</strong>
             </div>
             <div class="hero-pill">
-              <span>Services</span>
-              <strong>Design, detailing, consultancy, 2nd opinion</strong>
+              <span>Service Type</span>
+              <strong>Design + Review + Detailing</strong>
             </div>
           </div>
           <p class="hero-bottom-note">
-            Design, analysis, detailing and consultancy are coordinated by Silviu Ionescu, PhD Civil Eng., so that the Tekla model and drawings always match the structural intent.
+            All services are coordinated by Silviu Ionescu, PhD Civil Eng., ensuring the Tekla documentation accurately reflects the structural design decisions.
           </p>
         </aside>
+        </div>
       </section>
 
       <!-- SERVICES -->
       <section id="services" aria-labelledby="services-title">
-        <h2 id="services-title">Services: Steel Design, SAP2000/ETABS Analysis, Connections, Tekla Detailing &amp; Consultancy</h2>
+        <h2 id="services-title">Specialized Services</h2>
         <p>
-          TheSteelDesigner.eu covers the full chain from <strong>global structural analysis</strong> and Eurocode design to fabrication-ready Tekla documentation. 
-          In addition, we offer <strong>consultancy for calculations and detailing on existing steel structure projects</strong> and 
-          <strong>independent second opinions</strong>, so we can cover most typical needs in the market – from early concept to pre-fabrication checks.
+          TheSteelDesigner.eu covers the full project lifecycle, from <strong>global structural analysis</strong> and Eurocode compliance to fabrication-ready Tekla documentation. Our focus is on providing high-quality, specialized expertise where your team needs it most.
         </p>
 
         <div class="grid-3">
           <article class="card">
-            <div class="badge">Eurocode + FE analysis</div>
-            <h3>Steel Structure Design &amp; Analysis</h3>
+            <div class="badge">Structural Analysis & Design</div>
+            <h3>Steel Structure Design to Eurocodes</h3>
             <p>
-              Conceptual and detailed design of steel structures to Eurocodes, with global analysis carried out in SAP2000 or ETABS depending on project size and complexity.
+              Conceptual and detailed design for various steel structures (halls, platforms, mezzanines) using EN 1993, EN 1998, and EN 1991.
             </p>
             <ul>
-              <li>EN 1993 (steel), EN 1991 (actions), EN 1998 (seismic)</li>
-              <li>Steel structures: halls, platforms, mezzanines, canopies</li>
-              <li>3D structural models in SAP2000 / ETABS with realistic load combinations</li>
-              <li>Global analysis, serviceability and stability checks</li>
+              <li>Global analysis in SAP2000 / ETABS.</li>
+              <li>Serviceability and stability checks.</li>
+              <li>Seismic design awareness (EN 1998).</li>
             </ul>
           </article>
 
           <article class="card">
-            <div class="badge">Steel connections &amp; review</div>
-            <h3>Steel Connection Design &amp; Second Opinions</h3>
+            <div class="badge">Connections & Verification</div>
+            <h3>Steel Connection Design & Review</h3>
             <p>
-              Design and verification of steel connections, plus independent review of existing designs when a second opinion is needed.
+              Detailed design and verification of critical steel connections, including independent reviews for quality assurance.
             </p>
             <ul>
-              <li>Beam-to-column and beam-to-beam connections</li>
-              <li>Bracings, splices, base plates and moment-resisting joints</li>
-              <li>Eurocode-based calculation notes suitable for internal QA/QC</li>
-              <li>Independent checks and optimisation of existing connection designs</li>
+              <li>Moment-resisting and simple joints.</li>
+              <li>Base plates, splices, and bracings.</li>
+              <li>QA/QC suitable calculation notes.</li>
             </ul>
           </article>
 
           <article class="card">
-            <div class="badge">Tekla + consultancy</div>
-            <h3>Tekla Structures Modelling, Detailing &amp; Consultancy</h3>
+            <div class="badge">BIM & Documentation</div>
+            <h3>Tekla Structures Detailing & Consultancy</h3>
             <p>
-              3D Tekla Structures models aligned with the design intent and analysis results, plus consultancy support on existing Tekla models and drawings.
+              3D Tekla models accurately aligned with design intent, delivering fabrication-ready drawings and files.
             </p>
             <ul>
-              <li>3D models of frames, secondary steel, stairs, platforms</li>
-              <li>GA drawings, assembly drawings, shop drawings</li>
-              <li>BOM and NC files depending on your workshop workflow</li>
-              <li>Review, troubleshooting and optimisation of existing Tekla models</li>
+              <li>GA, assembly, and shop drawings.</li>
+              <li>BOM and NC files for workshop.</li>
+              <li>Troubleshooting and optimization of existing models.</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <!-- WHY / ABOUT + WORKFLOW -->
+      <!-- WORKFLOW / ABOUT -->
       <section id="workflow" aria-labelledby="workflow-title">
         <div class="two-col">
           <div>
-            <h2 id="workflow-title">How collaboration works</h2>
+            <h2 id="workflow-title">The Collaboration Process</h2>
             <p>
-              TheSteelDesigner.eu acts as your <strong>external steel design, analysis, Tekla and consultancy partner</strong>. 
-              The practice supports in-house teams when workload is high or when deeper expertise is needed in Eurocodes, SAP2000/ETABS analysis and structural behaviour.
-            </p>
-            <p>
-              We can join at almost any stage of a project – <strong>from early concept and global analysis to detailed Tekla modelling, 
-              consultancy on existing designs and second opinions before fabrication</strong>. The approach is simple: 
-              clear assumptions, clear calculations, clear deliverables — fully aligned with your standards and workflows.
+              We integrate seamlessly with your in-house team as your <strong>external steel specialist</strong>, providing expertise in complex Eurocode, SAP2000/ETABS analysis, and detailing challenges. We ensure clear communication from start to finish.
             </p>
 
             <div class="workflow">
               <div class="workflow-step">
-                <strong>1. Brief &amp; documents</strong>
+                <strong>1. Initial Briefing & Documentation</strong>
                 <p>
-                  You send architectural/structural drawings, project description, and any existing models or standards – including ongoing projects where you need extra support or a second opinion.
+                  Share architectural/structural drawings, project scope, existing models, and specific requirements (e.g., second opinion, deep analysis).
                 </p>
               </div>
               <div class="workflow-step">
-                <strong>2. Scope, model &amp; fee</strong>
+                <strong>2. Scope Definition & Proposal</strong>
                 <p>
-                  We define the scope (analysis in SAP2000/ETABS, design, connections, Tekla, consultancy, review), then estimate hours/fee and milestones. You approve before work starts.
+                  We define the clear scope (design, analysis, Tekla, consultancy), estimate the hours/fee, and set milestones. Work starts upon your approval.
                 </p>
               </div>
               <div class="workflow-step">
-                <strong>3. Analysis, design, detailing &amp; delivery</strong>
+                <strong>3. Execution & Delivery</strong>
                 <p>
-                  The structural model is built or refined in SAP2000/ETABS, checks are performed to Eurocodes, and the Tekla model and drawings are aligned with the design. 
-                  Consultancy and second-opinion feedback are provided clearly, with deliverables: reports, models, drawings and online meetings for clarifications.
+                  Structural modeling, Eurocode checks, and Tekla model alignment are performed. Deliverables include reports, models, drawings, and online clarification meetings.
                 </p>
               </div>
             </div>
           </div>
 
           <aside id="about">
-            <h2>About TheSteelDesigner.eu</h2>
+            <h2>Why Choose This Expertise?</h2>
             <p>
-              <strong>TheSteelDesigner.eu</strong> is led by <strong>Silviu Ionescu, PhD Civil Eng.</strong>, structural engineer specialised in 
-              <strong>steel structures and seismic design</strong>, with extensive experience in both design offices and on-site structural assessments.
+              <strong>TheSteelDesigner.eu</strong> is led by <strong>Silviu Ionescu, PhD Civil Eng.</strong>, combining academic rigor with extensive practical design office and construction site experience. This ensures the output is always technically sound and manufacturable.
             </p>
-            <p>
-              Daily work combines <strong>SAP2000, ETABS</strong> and <strong>Tekla Structures</strong>, 
-              turning advanced analysis into practical, buildable steel solutions. Alongside full design and detailing services, 
-              we also provide <strong>consultancy and independent second opinions</strong> on steel structure projects and Tekla models prepared by other teams.
-            </p>
-            <p><strong>Key strengths:</strong></p>
+            <p><strong>Key Differentiators:</strong></p>
             <ul>
-              <li>Eurocode-based steel design with seismic awareness</li>
-              <li>Advanced global analysis in SAP2000/ETABS for realistic structural behaviour</li>
-              <li>Integration of design office experience and real construction issues from site</li>
-              <li>Efficient combination of analytical skills and BIM/3D modelling</li>
-              <li>Consultancy and second opinions for steel designs and Tekla models</li>
-              <li>Clear English communication and remote collaboration across Europe</li>
+              <li>Seamless integration of <strong>SAP2000/ETABS</strong> analysis with <strong>Tekla</strong> detailing.</li>
+              <li>Deep understanding of Eurocode-based steel and seismic design.</li>
+              <li>Focus on <strong>consultancy and independent second opinions</strong> to de-risk projects.</li>
+              <li>Clear English communication for remote European collaboration.</li>
             </ul>
           </aside>
         </div>
       </section>
 
-      <!-- PORTFOLIO with "infinite scroll" style loading -->
+      <!-- PORTFOLIO -->
       <section id="portfolio" aria-labelledby="portfolio-title">
         <div class="portfolio-header">
           <div>
-            <h2 id="portfolio-title">Steel projects portfolio</h2>
+            <h2 id="portfolio-title">Selected Steel Projects</h2>
             <p class="portfolio-note">
-              A selection of steel structures and Tekla models. Use your own historic Tekla projects here for real examples.
+              A selection of industrial steel structures, access platforms, and detailed Tekla models developed for clients across Europe.
             </p>
           </div>
           <div class="portfolio-note">
-            Scroll down to load more projects automatically. Click on an image to view it larger.
+            Scroll down to load more projects. Click on an image to view it larger.
           </div>
         </div>
 
         <div class="portfolio-grid" id="portfolioGrid">
-          <!-- 30 items – înlocuiește src cu imaginile tale reale -->
-          <!-- 1–10 -->
+          <!-- 30 items – Using placeholder images as original URLs are not available -->
           <figure class="portfolio-item" data-index="1">
-            <img src="projects/project01.jpg" alt="Steel project 01 Tekla model">
-            <figcaption class="portfolio-caption">Project 01 – Industrial steel structure (Tekla + SAP2000)</figcaption>
+            <img src="./public/industrialsteelstructure.jpg" alt="Steel project 01 Tekla model">
+            <figcaption class="portfolio-caption">Project 01 – Industrial steel structure</figcaption>
           </figure>
           <figure class="portfolio-item" data-index="2">
-            <img src="projects/project02.jpg" alt="Steel project 02 Tekla model">
+            <img src="./public/steelplatformsandmezzanines.jpg" alt="Steel project 02 Tekla model">
             <figcaption class="portfolio-caption">Project 02 – Steel platforms and mezzanines</figcaption>
           </figure>
           <figure class="portfolio-item" data-index="3">
-            <img src="projects/project03.jpg" alt="Steel project 03 Tekla model">
+            <img src="./public/steelstairsandlandings.jpg" alt="Steel project 03 Tekla model">
             <figcaption class="portfolio-caption">Project 03 – Steel stairs and landings</figcaption>
           </figure>
           <figure class="portfolio-item" data-index="4">
-            <img src="projects/project04.jpg" alt="Steel project 04 Tekla model">
+            <img src="./public/steelcanopy.jpg" alt="Steel project 04 Tekla model">
             <figcaption class="portfolio-caption">Project 04 – Steel canopy</figcaption>
           </figure>
           <figure class="portfolio-item" data-index="5">
-            <img src="projects/project05.jpg" alt="Steel project 05 Tekla model">
+            <img src="./public/steelstructureinsideexistinghall.jpg" alt="Steel project 05 Tekla model">
             <figcaption class="portfolio-caption">Project 05 – Steel structure inside existing hall</figcaption>
           </figure>
           <figure class="portfolio-item" data-index="6">
-            <img src="projects/project06.jpg" alt="Steel project 06 Tekla model">
+            <img src="./public/bracingandstabilitysystem.jpg" alt="Steel project 06 Tekla model">
             <figcaption class="portfolio-caption">Project 06 – Bracing and stability system</figcaption>
           </figure>
           <figure class="portfolio-item" data-index="7">
-            <img src="projects/project07.jpg" alt="Steel project 07 Tekla connections">
+            <img src="./public/teklaconnectiondetails.jpg" alt="Steel project 07 Tekla connections">
             <figcaption class="portfolio-caption">Project 07 – Tekla connection details</figcaption>
           </figure>
           <figure class="portfolio-item" data-index="8">
-            <img src="projects/project08.jpg" alt="Steel project 08 Tekla model">
+            <img src="./public/multispansteelstructure.jpg" alt="Steel project 08 Tekla model">
             <figcaption class="portfolio-caption">Project 08 – Multi-span steel structure</figcaption>
           </figure>
           <figure class="portfolio-item" data-index="9">
-            <img src="projects/project09.jpg" alt="Steel project 09 Tekla model">
+            <img src="./public/retrofitandstrengthening.jpg" alt="Steel project 09 Tekla model">
             <figcaption class="portfolio-caption">Project 09 – Retrofit and strengthening</figcaption>
           </figure>
           <figure class="portfolio-item" data-index="10">
-            <img src="projects/project10.jpg" alt="Steel project 10 Tekla model">
-            <figcaption class="portfolio-caption">Project 10 – Steel frame with overhead crane</figcaption>
+            <img src="./public/steelframewithcrane.jpg" alt="Steel project 10 Tekla model">
+            <figcaption class="portfolio-caption">Project 10 – Steel frame with crane</figcaption>
           </figure>
 
-          <!-- 11–20 -->
-          <figure class="portfolio-item" data-index="11">
-            <img src="projects/project11.jpg" alt="Steel project 11 Tekla model">
-            <figcaption class="portfolio-caption">Project 11 – Steel roof structure</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="12">
-            <img src="projects/project12.jpg" alt="Steel project 12 Tekla model">
-            <figcaption class="portfolio-caption">Project 12 – Access platforms</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="13">
-            <img src="projects/project13.jpg" alt="Steel project 13 Tekla model">
-            <figcaption class="portfolio-caption">Project 13 – Mixed steel-concrete system</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="14">
-            <img src="projects/project14.jpg" alt="Steel project 14 Tekla model">
-            <figcaption class="portfolio-caption">Project 14 – Steel gallery</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="15">
-            <img src="projects/project15.jpg" alt="Steel project 15 Tekla model">
-            <figcaption class="portfolio-caption">Project 15 – Pipe racks</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="16">
-            <img src="projects/project16.jpg" alt="Steel project 16 Tekla model">
-            <figcaption class="portfolio-caption">Project 16 – Steel tower</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="17">
-            <img src="projects/project17.jpg" alt="Steel project 17 Tekla model">
-            <figcaption class="portfolio-caption">Project 17 – Seismic braced steel frame</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="18">
-            <img src="projects/project18.jpg" alt="Steel project 18 Tekla model">
-            <figcaption class="portfolio-caption">Project 18 – Industrial extension</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="19">
-            <img src="projects/project19.jpg" alt="Steel project 19 Tekla model">
-            <figcaption class="portfolio-caption">Project 19 – Steel support structure</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="20">
-            <img src="projects/project20.jpg" alt="Steel project 20 Tekla model">
-            <figcaption class="portfolio-caption">Project 20 – Platforms &amp; ladders</figcaption>
-          </figure>
-
-          <!-- 21–30 -->
-          <figure class="portfolio-item" data-index="21">
-            <img src="projects/project21.jpg" alt="Steel project 21 Tekla model">
-            <figcaption class="portfolio-caption">Project 21 – Steel stair tower</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="22">
-            <img src="projects/project22.jpg" alt="Steel project 22 Tekla model">
-            <figcaption class="portfolio-caption">Project 22 – Steel footbridge</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="23">
-            <img src="projects/project23.jpg" alt="Steel project 23 Tekla model">
-            <figcaption class="portfolio-caption">Project 23 – Roof trusses</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="24">
-            <img src="projects/project24.jpg" alt="Steel project 24 Tekla model">
-            <figcaption class="portfolio-caption">Project 24 – Steel shed</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="25">
-            <img src="projects/project25.jpg" alt="Steel project 25 Tekla model">
-            <figcaption class="portfolio-caption">Project 25 – Steel frame analysis</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="26">
-            <img src="projects/project26.jpg" alt="Steel project 26 Tekla model">
-            <figcaption class="portfolio-caption">Project 26 – Connection optimisation</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="27">
-            <img src="projects/project27.jpg" alt="Steel project 27 Tekla model">
-            <figcaption class="portfolio-caption">Project 27 – Multi-storey steel frame</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="28">
-            <img src="projects/project28.jpg" alt="Steel project 28 Tekla model">
-            <figcaption class="portfolio-caption">Project 28 – Retrofit of existing hall</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="29">
-            <img src="projects/project29.jpg" alt="Steel project 29 Tekla model">
-            <figcaption class="portfolio-caption">Project 29 – Secondary steel detailing</figcaption>
-          </figure>
-          <figure class="portfolio-item" data-index="30">
-            <img src="projects/project30.jpg" alt="Steel project 30 Tekla model">
-            <figcaption class="portfolio-caption">Project 30 – Detailed Tekla model</figcaption>
-          </figure>
+          <!-- The rest of the items are hidden by default and loaded by JS -->
+          <figure class="portfolio-item" data-index="11"><img src="./public/steelroofstructure.jpg" alt="Steel project 11 Tekla model"><figcaption class="portfolio-caption">Project 11 – Steel roof structure</figcaption></figure>
+          <figure class="portfolio-item" data-index="12"><img src="./public/accessplatforms.jpg" alt="Steel project 12 Tekla model"><figcaption class="portfolio-caption">Project 12 – Access platforms</figcaption></figure>
+          <figure class="portfolio-item" data-index="13"><img src="./public/mixedsteelconcretesystem.jpg" alt="Steel project 13 Tekla model"><figcaption class="portfolio-caption">Project 13 – Mixed steel-concrete system</figcaption></figure>
+          <figure class="portfolio-item" data-index="14"><img src="./public/steelgallery.jpg" alt="Steel project 14 Tekla model"><figcaption class="portfolio-caption">Project 14 – Steel gallery</figcaption></figure>
+          <figure class="portfolio-item" data-index="15"><img src="./public/piperacks.jpg" alt="Steel project 15 Tekla model"><figcaption class="portfolio-caption">Project 15 – Pipe racks</figcaption></figure>
+          <figure class="portfolio-item" data-index="16"><img src="./public/steeltower.jpg" alt="Steel project 16 Tekla model"><figcaption class="portfolio-caption">Project 16 – Steel tower</figcaption></figure>
+          <figure class="portfolio-item" data-index="17"><img src="./public/seismicbracedsteelframe.jpg" alt="Steel project 17 Tekla model"><figcaption class="portfolio-caption">Project 17 – Seismic braced steel frame</figcaption></figure>
+          <figure class="portfolio-item" data-index="18"><img src="./public/industrialextension.jpg" alt="Steel project 18 Tekla model"><figcaption class="portfolio-caption">Project 18 – Industrial extension</figcaption></figure>
+          <figure class="portfolio-item" data-index="19"><img src="./public/steelsupportstructure.jpg" alt="Steel project 19 Tekla model"><figcaption class="portfolio-caption">Project 19 – Steel support structure</figcaption></figure>
+          <figure class="portfolio-item" data-index="20"><img src="./public/platformsandladders.jpg" alt="Steel project 20 Tekla model"><figcaption class="portfolio-caption">Project 20 – Platforms &amp; ladders</figcaption></figure>
         </div>
       </section>
 
       <!-- CONTACT -->
       <section id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Request a quote, consultancy or a quick call</h2>
+        <h2 id="contact-title">Start Your Project Consultation</h2>
         <p>
-          Briefly describe what you need – steel design, SAP2000/ETABS analysis, connections, Tekla modelling, 
-          <strong>consultancy on an existing project</strong> or a <strong>second opinion</strong> – 
-          and you will receive a clear, concise proposal.
+          Describe briefly what you need: specialized <strong>steel design, SAP2000/ETABS analysis, Tekla detailing, or a crucial second opinion</strong>. We will respond with a clear, concise proposal.
         </p>
 
         <div class="contact-box">
           <div class="contact-details">
             <p>
               <strong>TheSteelDesigner.eu</strong><br>
-              European steel design, structural analysis (SAP2000/ETABS), Tekla detailing and consultancy, led by <strong>Silviu Ionescu, PhD Civil Eng.</strong>
+              European steel design, structural analysis, and Tekla consultancy, led by <strong>Silviu Ionescu, PhD Civil Eng.</strong>
             </p>
             <p>
               <strong>Email:</strong> contact@thesteeldesigner.eu<br>
-              <strong>Location:</strong> Romania (EU) – working remotely across Europe
+              <strong>Location:</strong> Romania (EU) – serving clients remotely across Europe.
             </p>
             <p>
-              <strong>Typical collaboration:</strong><br>
-              TheSteelDesigner.eu joins your organisation as an external steel specialist: from global analysis and Eurocode checks to Tekla documentation, 
-              <strong>consultancy for calculations and detailing</strong>, and <strong>independent second opinions</strong> before fabrication.
+              <strong>Why collaborate?</strong> We fill specialist gaps in your team, focusing on technical excellence from global analysis to fabrication readiness, and offering <strong>independent review</strong> to ensure project success.
             </p>
-            <p>
-              Prefer WhatsApp or LinkedIn?<br>
-              Use the floating buttons or the LinkedIn link in the header.
+            <p style="font-size: 13px; color: var(--accent-primary); font-weight: 600;">
+                Prefer WhatsApp or LinkedIn? Use the dedicated floating buttons.
             </p>
           </div>
 
@@ -460,39 +376,47 @@
               </div>
             </div>
 
-            <div class="field-group">
-              <div style="flex:1">
-                <label for="service">Service you need</label>
-                <select id="service" name="service">
-                  <option value="">Select…</option>
-                  <option value="steel-design">Steel structure design (Eurocodes)</option>
-                  <option value="analysis">Structural analysis (SAP2000/ETABS)</option>
-                  <option value="connections">Steel connection design</option>
-                  <option value="tekla">Tekla Structures modelling &amp; detailing</option>
-                  <option value="consultancy">Consultancy / second opinion on existing project</option>
-                  <option value="other">Other / mixed</option>
-                </select>
-              </div>
+            <div>
+              <label for="service">Service you need *</label>
+              <select id="service" name="service" required>
+                <option value="">Select service type...</option>
+                <option value="steel-design">Steel structure design (Eurocodes)</option>
+                <option value="analysis">Structural analysis (SAP2000/ETABS)</option>
+                <option value="connections">Steel connection design</option>
+                <option value="tekla">Tekla Structures modelling &amp; detailing</option>
+                <option value="consultancy">Consultancy / second opinion on existing project</option>
+                <option value="other">Other / mixed</option>
+              </select>
             </div>
 
             <div>
               <label for="message">Short project description *</label>
-              <textarea id="message" name="message" required placeholder="Project type, approximate size/tons, what you expect, deadlines, whether you need full design, Tekla, consultancy or a second opinion…"></textarea>
+              <textarea id="message" name="message" required placeholder="Project type, approximate size/tons, expectations, deadlines, and project phase..."></textarea>
             </div>
 
-            <button type="submit" class="btn-primary">Send request</button>
-            <p style="font-size:11px;color:var(--text-muted);margin-top:4px;">
-              By sending this form you agree to be contacted by email. Usually you receive an answer within one working day.
+            <button type="submit" class="btn-primary btn-base">Send request</button>
+            <p style="font-size:11px;color:var(--text-muted);margin-top:4px; text-align: right;">
+              Response usually within one working day.
             </p>
           </form>
         </div>
       </section>
 
+      <!-- FOOTER -->
       <div class="footer">
-        <span>© <span id="year"></span> TheSteelDesigner.eu – Steel structure design, SAP2000/ETABS analysis, Tekla detailing &amp; consultancy.</span>
-        <span>Site by Silviu Ionescu – <a href="#hero-title">back to top</a></span>
+        <span>© <span id="year"></span> TheSteelDesigner.eu – Steel design, analysis, detailing &amp; consultancy.</span>
+        <span>Site by Silviu Ionescu – <a href="#hero-title">Back to top</a></span>
       </div>
     </main>
+  </div>
+
+  <!-- Lightbox overlay -->
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Close image">&times;</button>
+    <figure class="lightbox-content">
+      <img id="lightboxImage" src="" alt="Steel project full view">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
   </div>
 
   <!-- Lightbox overlay -->
