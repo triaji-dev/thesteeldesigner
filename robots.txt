@@ -1,0 +1,10 @@
+# robots.txt for TheSteelDesigner.eu
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://thesteeldesigner.eu/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 10
